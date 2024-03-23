@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TestISTO">
+    <!--Main horizontal linear layout code start here -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="326dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        android:layout_marginBottom="150dp">
+        <!--Main grid layout code start here-->
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="361dp"
+            android:layout_height="match_parent">
+            <!--First row 1 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout10"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="0"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/A1_P1_10"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_10"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_10"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_10"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+
+            </androidx.gridlayout.widget.GridLayout>
+            <!--First row 1 grid  code end here -->
+            <!--First row 2 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout9"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/A1_P1_9"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_9"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_9"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_9"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--First row 2 grid  code end here -->
+            <!--First row 3 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout8"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@android:color/holo_purple"
+                app:layout_column="2"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/A1_P1_8"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_8"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_8"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_8"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--First row 3 grid  code end here -->
+            <!--First row 4 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout7"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="3"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/A1_P1_7"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_7"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_7"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_7"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--First row 4 grid  code end  here -->
+            <!--First row 5 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout6"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="4"
+                app:layout_row="0">
+
+                <ImageView
+                    android:id="@+id/A1_P1_6"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_6"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_6"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_6"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--First row 5 grid  code end here -->
+            <!--Second row 1 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout11"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="0"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/A1_P1_11"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_11"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_11"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_11"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--second row 1 grid  code end here -->
+            <!--Second row 2 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout18"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="1"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/A1_P1_18"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_18"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_18"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_18"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--second row 2 grid  code end here -->
+            <!--Second row 3 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout19"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="2"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/A1_P1_19"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_19"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_19"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_19"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--second row 3 grid  code end here -->
+            <!--Second row 4 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout20"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="3"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/A1_P1_20"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_20"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_20"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_20"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--second row 4 grid  code end here -->
+            <!--Second row 5 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout5"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="4"
+                app:layout_row="1">
+
+                <ImageView
+                    android:id="@+id/A1_P1_5"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_5"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_5"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_5"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--second row 5 grid  code end here -->
+            <!--Thrid row 1 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout12"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@color/teal_200"
+                app:layout_column="0"
+                app:layout_row="2">
+
+                <ImageView
+                    android:id="@+id/A1_P1_12"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_12"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_12"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_12"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+
+
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Third row 1 grid  code end here -->
+            <!--Thrid row 2 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout17"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="1"
+                app:layout_row="2">
+
+                <ImageView
+                    android:id="@+id/A1_P1_17"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_17"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_17"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_17"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Third row 2 grid  code end here -->
+            <!--Thrid row 3 grid  code start here -->
+            <!--Third row 3 grid  code end here -->
+            <!--Thrid row 4 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout24"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@android:color/holo_green_light"
+                app:layout_column="2"
+                app:layout_row="2">
+
+                <ImageView
+                    android:id="@+id/A1_P1_24"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_24"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_24"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_24"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout21"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="3"
+                app:layout_row="2">
+
+                <ImageView
+                    android:id="@+id/A1_P1_21"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_21"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_21"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_21"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Third row 4 grid  code end here -->
+            <!--Thrid row 5 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout4"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@android:color/holo_red_dark"
+                app:layout_column="4"
+                app:layout_row="2">
+
+                <ImageView
+                    android:id="@+id/A1_P1_4"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_4"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_4"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_4"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Third row 5 grid  code end here -->
+            <!--Fourth row 1 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout13"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="0"
+                app:layout_row="3">
+
+                <ImageView
+                    android:id="@+id/A1_P1_13"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_13"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_13"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_13"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fourth row 1 grid  code end here -->
+            <!--Fourth row 2 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout16"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="1"
+                app:layout_row="3">
+
+                <ImageView
+                    android:id="@+id/A1_P1_16"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_16"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_16"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_16"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fourth row 2 grid  code end here -->
+            <!--Fourth row 3 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout23"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="2"
+                app:layout_row="3">
+
+                <ImageView
+                    android:id="@+id/A1_P1_23"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_23"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_23"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_23"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fourth row 3 grid  code end here -->
+            <!--Fourth row 4 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout22"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="3"
+                app:layout_row="3">
+
+                <ImageView
+                    android:id="@+id/A1_P1_22"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_22"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_22"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_22"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fourth row 4 grid  code end here -->
+            <!--Fourth row 5 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout3"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="4"
+                app:layout_row="3">
+
+                <ImageView
+                    android:id="@+id/A1_P1_3"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_3"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_3"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_3"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fourth row 5 grid  code end here -->
+            <!--Fifth row 1 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout14"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="0"
+                app:layout_row="4">
+
+                <ImageView
+                    android:id="@+id/A1_P1_14"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_14"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_14"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_14"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fifth row 1 grid  code end here -->
+            <!--Fifth row 2 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout15"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="1"
+                app:layout_row="4">
+
+                <ImageView
+                    android:id="@+id/A1_P1_15"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_15"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_15"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_15"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fifth row 2 grid  code end here -->
+            <!--Fifth row 3 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout0"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@color/teal_700"
+                app:layout_column="2"
+                app:layout_row="4">
+
+                <ImageView
+                    android:id="@+id/A1_P1_0"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/p1" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_0"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/p2"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+
+                <ImageView
+                    android:id="@+id/A3_P3_0"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/p3"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_0"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:src="@drawable/p4"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+
+
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fifth row 3 grid  code end here -->
+            <!--Fifth row 4 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout1"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="3"
+                app:layout_row="4">
+
+                <ImageView
+                    android:id="@+id/A1_P1_1"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_1"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_1"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_1"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fifth row 4 grid  code end here -->
+            <!--Fifth row 5 grid  code start here -->
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridLayout2"
+                android:layout_width="72dp"
+                android:layout_height="65dp"
+                android:background="@drawable/grid_layout_border"
+                app:layout_column="4"
+                app:layout_row="4">
+
+                <ImageView
+                    android:id="@+id/A1_P1_2"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp" />
+
+                <ImageView
+                    android:id="@+id/A2_P2_2"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="0" />
+
+                <ImageView
+                    android:id="@+id/A3_P3_2"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <ImageView
+                    android:id="@+id/A4_P4_2"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    app:layout_column="2"
+                    app:layout_row="1" />
+            </androidx.gridlayout.widget.GridLayout>
+            <!--Fifth row 5 grid  code end here -->
+        </androidx.gridlayout.widget.GridLayout>
+        <!--Main grid layout code start here-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="223dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:text="ISTO Game"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.775"
+        app:srcCompat="@drawable/front1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.819"
+        app:srcCompat="@drawable/front2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.819"
+        app:srcCompat="@drawable/back1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="44dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startBtn"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.819"
+        app:srcCompat="@drawable/front4" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <Button
+        android:id="@+id/A1"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="20dp"
+        android:text="A1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView1"
+        app:layout_constraintEnd_toStartOf="@+id/A2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/A2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="A2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/A3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/A3"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="A3"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/A4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/A4"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:text="A4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    <!--Main horizontal linear layout code end here -->
+</androidx.constraintlayout.widget.ConstraintLayout>

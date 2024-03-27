@@ -1,6 +1,7 @@
 package com.example.calculator;
 
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,12 +21,12 @@ public class TestISTO extends AppCompatActivity {
     private Button A2Btn;
     private Button A3Btn;
     private Button A4Btn;
-//    This below three lines of code for shuffling random 8 images(Front-4 and back-4) into 4 imageView
+    //    This below three lines of code for shuffling random 8 images(Front-4 and back-4) into 4 imageView
     private List<Integer> allImageResRandom;
     private List<Integer> selectedImageResRandom;
     private List<ImageView> lstImgRandom;
 
-//  This below three lines of code for get imageView id if image are place into them : image 4 and imageView 100
+    //  This below three lines of code for get imageView id if image are place into them : image 4 and imageView 100
     private List<Integer> allImageResDashBoard;
     private List<ImageView> lstImgDashboard;
 
@@ -181,46 +182,53 @@ public class TestISTO extends AppCompatActivity {
     }
 
     // This code updates the ImageView elements with the selected images
+    // This code updates the ImageView elements with the selected images
     private void updateImageViews() {
-        for (int i = 0; i < selectedImageResRandom.size(); i++) {
+        for (int i = 0; i < selectedImageResRandom.size() && i < lstImgRandom.size(); i++) {
             lstImgRandom.get(i).setImageResource(selectedImageResRandom.get(i));
         }
     }
 
+
     // This code retrieves the name of the currently displayed image and shows it in a Toast
     private void showImageNameInRandom() {
-        StringBuilder toastMessage = new StringBuilder();
-
         int frontCount = 0;
-        int backCount = 0;
 
-        // Count the number of front and back images
+        // Count the number of front images
         for (Integer imageRes : selectedImageResRandom) {
             if (isFront(imageRes)) {
                 frontCount++;
-            } else {
-                backCount++;
-            }}
+            }
+        }
 
-        // Update images in lstImgDashboard based on front and back count
+        // Move front images forward in lstImgDashboard based on front count
         if (frontCount > 0) {
-            for (int i = 0; i < lstImgDashboard.size() && i < frontCount; i++) {
-                ImageView imageView = lstImgDashboard.get(i);
-                int newImageIndex = i + frontCount;
-                if (newImageIndex < allImageResDashBoard.size()) {
-                    imageView.setImageResource(allImageResDashBoard.get(newImageIndex));
-                }}
-        } else if (backCount == 4) {
             for (int i = 0; i < lstImgDashboard.size(); i++) {
                 ImageView imageView = lstImgDashboard.get(i);
-                int newImageIndex = i + 8; // Move 8 steps ahead
-                if (newImageIndex < allImageResDashBoard.size()) {
-                    imageView.setImageResource(allImageResDashBoard.get(newImageIndex));
-                }}}
+                if (imageView != null) {
+                    String imageViewId = getResources().getResourceEntryName(imageView.getId());
+                    String[] parts = imageViewId.split("_");
+                    int index = Integer.parseInt(parts[2]);
+                    int newImageIndex = index + frontCount;
+
+                    // Get the corresponding image resource for the ImageView
+                    int imageIndex = i % 4; // Get the index of p1, p2, p3, or p4
+                    int newImageResourceId = allImageResDashBoard.get(imageIndex);
+
+                    // Set the new image to the ImageView
+                    int targetImageViewId = getResources().getIdentifier("A" + parts[1] + "_P" + parts[1] + "_" + newImageIndex, "id", getPackageName());
+                    ImageView targetImageView = findViewById(targetImageViewId);
+                    if (targetImageView != null && isFront(selectedImageResRandom.get(imageIndex))) {
+                        targetImageView.setImageResource(newImageResourceId);
+                    }
+                }
+            }
+        }
 
         // Show the toast message
-        showToast(toastMessage.toString());
+        showToast("Moved " + frontCount + " images forward in lstImgDashboard.");
     }
+
 
     // Check if the image is a front image
     private boolean isFront(int imageRes) {

@@ -33,6 +33,7 @@ public class TestISTO extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_test_isto);
         startBtn = findViewById(R.id.startBtn);
 

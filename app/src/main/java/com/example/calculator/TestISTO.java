@@ -196,6 +196,18 @@ public class TestISTO extends AppCompatActivity {
                 A2Btn.setEnabled(true);
                 A3Btn.setEnabled(true);
                 A4Btn.setEnabled(true);
+                if (currentPosition[0]==24) {
+                    A1Btn.setEnabled(false);
+                }
+                if (currentPosition[1]==24) {
+                    A2Btn.setEnabled(false);
+                }
+                if (currentPosition[2]==24) {
+                    A3Btn.setEnabled(false);
+                }
+                if (currentPosition[3]==24) {
+                    A4Btn.setEnabled(false);
+                }
                 startBtn.setEnabled(false);
             }
         });
@@ -245,9 +257,7 @@ public class TestISTO extends AppCompatActivity {
                     if ((nextPosition[2] + frontImageCount) <= 24) {
                         nextPosition[2] = nextPosition[2] + frontImageCount;
                         pawnMove(3, nextPosition[2], currentPosition[2]);
-
                     }
-
                 }else{
                     showToast("Click start button for the start the game");
                 }
@@ -280,46 +290,19 @@ public class TestISTO extends AppCompatActivity {
         selectedImageResRandom.addAll(allImageResRandom.subList(0, 4));
 
         // Update nextPosition based on random moves generated
-//        Random random = new Random();
-//        for (int i = 0; i < 4; i++) {
-//            int randomCount = random.nextInt(4) + 1;
-//            nextPosition[i] = currentPosition[i] + randomCount;
-//            if (nextPosition[i] >= lstImgDashboard.size()) {
-//                nextPosition[i] %= lstImgDashboard.size();
-//            }}
         for (int imageRes : selectedImageResRandom) {
             if (isFront(imageRes)) {
                 frontImageCount++;
             }
         }
-
-        // Display a toast message indicating the number of front images
-//        showToast("Number of front images: " + frontImageCount);
     }
 
     // This method moves the images according to the random count and removes the images from the previous image views
-
     private void pawnMove(int pawnIndex, int next_arr, int curr_arr) {
-        ImageView imageView1 = findViewById(R.id.A1_P1_24);
-        ImageView imageView2 = findViewById(R.id.A2_P2_24);
-        ImageView imageView3 = findViewById(R.id.A3_P3_24);
-        ImageView imageView4 = findViewById(R.id.A4_P4_24);
         if(next_arr==0){
             Toast.makeText(this, "Click start button once again.", Toast.LENGTH_SHORT).show();
             frontImageCount=0;
         }else {
-            if (currentPosition[0]==24) {
-                A1Btn.setEnabled(false);
-            }
-            if (currentPosition[0]==24) {
-                A2Btn.setEnabled(false);
-            }
-            if (currentPosition[0]==24) {
-                A3Btn.setEnabled(false);
-            }
-            if (currentPosition[0]==24) {
-                A4Btn.setEnabled(false);
-            }
             int resourceId = getResources().getIdentifier("A" + pawnIndex + "_P" + pawnIndex + "_" + curr_arr, "id", getPackageName());
             ImageView newImageView = findViewById(resourceId);
             String nextarr_str = "A" + pawnIndex + "_P" + pawnIndex + "_" + next_arr;
